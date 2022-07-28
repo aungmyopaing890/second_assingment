@@ -29,21 +29,17 @@ class _SplashViewState extends State<SplashView> {
       return Timer(duration, navigationPageWel);
     }
   }
-
   void navigationPageHome() {
     Navigator.of(context).pushReplacementNamed(Routes.mainRoute);
   }
-
   void navigationPageWel() {
     Navigator.of(context).pushReplacementNamed(Routes.onBoardingRoute);
   }
-
   @override
   void initState() {
     super.initState();
     startTime();
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
