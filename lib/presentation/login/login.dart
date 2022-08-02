@@ -4,7 +4,6 @@ import 'package:second_assingment/presentation/resources/values_manager.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
-
   @override
   State<LoginView> createState() => _LoginViewState();
 }
