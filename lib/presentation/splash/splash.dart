@@ -16,14 +16,19 @@ class _SplashViewState extends State<SplashView> {
   startTime() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     bool? firstTime = prefs.getBool('first_time');
+    String? token = prefs.getString('token');
     var duration = const Duration(seconds: 3);
     if (firstTime != null && !firstTime) {
       // Not first time
-      return Timer(duration, navigationPagLogin);
+      if (token != null) {
+        return Timer(duration, navigationPageHome);
+      } else {
+        return Timer(duration, navigationPagLogin);
+      }
     } else {
       // First time
       prefs.setBool('first_time', false);
-      return Timer(duration, navigationPagLogin);
+      return Timer(duration, navigationPageWel);
     }
   }
 
