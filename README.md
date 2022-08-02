@@ -2,6 +2,8 @@
 <p><br>3.Login Screen<br>&nbsp; &nbsp; connect to back-end login check<br>&nbsp; &nbsp; check the login credentials<br>&nbsp; &nbsp; show error with Snack Bar<br>&nbsp; &nbsp; in success, store user token with shared_preferences</p>
 <p><br>4.home Screen<br>&nbsp; &nbsp; connect to back-end to get user profile with user token stored with shared_preferences<br>&nbsp; &nbsp; show username,email,phone<br>&nbsp; &nbsp; use null safety for email</p>
 <p><br></p>
+
+
 1.splash Screen<br>
 ![My Image](screenshots/splash.jpg)<br>
 
